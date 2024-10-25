@@ -24,18 +24,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 PRODUCT_PACKAGES += \
     DeskClock \
     preinstalled-packages-platform-handheld-product.xml \
-    QuickSearchBox \
     SettingsIntelligence \
     frameworks-base-overlays
 
 ifeq ($(INFINITY_BUILD),)
 PRODUCT_PACKAGES += \
-    Browser2 \
-    Calendar \
-    Camera2 \
-    Gallery2 \
-    LatinIME \
-    Music
+    LatinIME
 endif
 
 PRODUCT_PACKAGES_DEBUG += \
